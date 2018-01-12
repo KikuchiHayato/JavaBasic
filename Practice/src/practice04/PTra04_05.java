@@ -58,7 +58,7 @@ public class PTra04_05 {
 		               break;
 		        }
 			    if (myHand == 2) {
-		   	        break;
+			    	winFlg = true;
 		        }
 			} else if (cpuHand == 1) {
 				System.out.println("チョキ！！");
@@ -74,7 +74,7 @@ public class PTra04_05 {
 		               break;
 			    }
 			    if (myHand == 0) {
-			        break;
+			    	winFlg = true;
 			    }
 
 			} else {
@@ -91,7 +91,7 @@ public class PTra04_05 {
 		               break;
 				}
 		        if (myHand == 1) {
-			   	    break;
+		        	winFlg = true;
 			    }
 			}
 		}
