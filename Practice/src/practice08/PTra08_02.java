@@ -13,10 +13,11 @@ public class PTra08_02 {
 		int y = 50;
 
 		// ★ 変数receiveを宣言して、averageメソッドを（変数x, 変数y）で呼び出した結果を代入してください
+		String receive = average(x, y);
 
 
 		// ★ 変数receiveを出力してください
-
+		System.out.print(receive);
 	}
 
 	/*
@@ -28,10 +29,10 @@ public class PTra08_02 {
 	 *
 	 * 引数で渡された２つのint型の平均値を返すメソッド
 	 */
-	public static String average(int x, int y) {
+	 public static String average(int x, int y) {
 
 		String result = "平均は：" + ((x + y) / 2);
 		return result;
 
-	}
+	 }
 }
