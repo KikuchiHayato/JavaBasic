@@ -35,6 +35,9 @@ public class PTra10_04 {
 
 			// ★ 配列にした値を、users[カウント]の各フィールドに代入してください
 			// ★ ユーザIDに該当する値が数値でなかった場合は、エラーでプログラムが止まっても良いです
+			User User1 = new User();
+			users[i] = User1;
+
 			users[i].userId = Integer.parseInt(lines[0]);
 			users[i].userNm = lines[1];
 			users[i].mail = lines[2];
