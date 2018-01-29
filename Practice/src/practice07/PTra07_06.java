@@ -22,10 +22,9 @@ public class PTra07_06 {
 		for (int[] score : array) {
             for (int i : score) {
                 sum += i;
-                a += 1;
+                a++;
             }
         }
 		System.out.println(sum / a);
-
 	}
 }
