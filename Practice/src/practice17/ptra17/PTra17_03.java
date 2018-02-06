@@ -35,29 +35,32 @@ public class PTra17_03 {
 		 * から再度入力を求めるような形に仕様変更してください。
 		 *
 		 */
-		try {
-			for (int i = 0; i < question.length; i++) {
-				System.out.println("問題：" + (i + 1));
-				System.out.println(question[i]);
+		for (int i = 0; i < question.length; i++) {
+			System.out.println("問題：" + (i + 1));
+			System.out.println(question[i]);
 
+			int num = 0;
+			while (true) {
 				System.out.println("回答を数字で入力してください");
-				String input = ThrowExceptionUtil.inputValue();
+				try {
+					String input = ThrowExceptionUtil.inputValue();
+					num = Integer.parseInt(input);
 
-				int num = Integer.parseInt(input);
-
-				if (answer[i] == num) {
-					score++;
+				} catch(IOException e) {
+					System.out.println("例外が発生しました");
+					continue;
+				} catch(NumberFormatException e) {
+					System.out.println("数字以外が入力されました");
+					continue;
 				}
+				break;
 			}
-		} catch(IOException e) {
-			System.out.println("例外が発生しました");
-		} catch(NumberFormatException e) {
-			System.out.println("数字以外が入力されました");
-		}
 
+			if (answer[i] == num) {
+				score++;
+			}
+		}
 		System.out.println("全ての問題が終わりました。");
 		System.out.println("あなたの得点は・・・" + score + "点です！");
-
 	}
-
 }

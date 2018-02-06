@@ -34,13 +34,13 @@ public class PTra05_01 {
              System.out.println("不合格");
              break;
 	     case 3:
-	         System.out.println("勝ち");
-	         break;
-	     case 4:
 	         System.out.println("もう少しで合格");
 	         break;
-	     case 5:
+	     case 4:
 	         System.out.println("合格点");
+	         break;
+	     case 5:
+	         System.out.println("満点");
 	         break;
 	     default:
              System.out.println("正しい数値を入れてください");
