@@ -24,7 +24,7 @@ public class PTra07_05 {
 		for (int i = 0; i < array.length; i++) {
 
 			// ★ 0～100000の中からランダムで値を取得して、配列arrayのi番目に代入してください
-			int limitNumber = 100000;
+			int limitNumber = 100001;
 				int random = 0;
 				random = new java.util.Random().nextInt(limitNumber);
 				array[i] = random;

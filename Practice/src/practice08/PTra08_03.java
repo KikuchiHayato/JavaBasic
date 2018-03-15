@@ -10,7 +10,7 @@ public class PTra08_03 {
 	public static void main(String[] args) {
 
 		// ★ 0～100のランダムな値を取得して、変数numberに代入してください
-		int limitNumber = 100;
+		int limitNumber = 101;
 		int random = 0;
 		random = new java.util.Random().nextInt(limitNumber);
 		int number = random;

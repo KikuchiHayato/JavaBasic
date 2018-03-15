@@ -18,5 +18,9 @@ public class PTra07_03 {
 		System.out.print(keyword[2]);
 		System.out.print(keyword[1]);
 		System.out.print(keyword[0]);
+		
+		for (int i = 0; i <= 0 ; i--) {
+			System.out.println(keyword[i]);
+		}
 	}
 }
